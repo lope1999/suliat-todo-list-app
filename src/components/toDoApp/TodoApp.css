@@ -1,0 +1,105 @@
+.todo {
+  align-self: center;
+  color: white;
+}
+
+.todo .crossText {
+  text-decoration: line-through;
+  color: red;
+}
+
+.todo input {
+  background: transparent;
+  border: none;
+  color: rgb(218, 180, 180);
+  border-bottom: 4px dashed #ff0037;
+  min-width: 500px;
+  margin-left: 30px;
+  padding: 5px;
+  font-size: 1.5rem;
+}
+
+.todo input::placeholder {
+  color: black;
+  font-size: 1.3rem;
+}
+
+.todo input:focus {
+  outline: none;
+  border: 2px dotted #ff0037;
+}
+
+.todo .add-btn,
+.todo .completed_list {
+  margin-top: 10px;
+  margin-left: 470px;
+  display: flex;
+  height: 30px;
+  padding: 0;
+  background: #ff90a8;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  overflow: hidden;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.todo .completed_list {
+  margin-left: 200px;
+}
+
+.todo .add-btn:hover,
+.todo .completed_list:hover {
+  color: #ff90a8;
+  background-color: #b1062b;
+  border: 1px solid #ff90a8;
+}
+
+.todo ul {
+  margin-top: 30px;
+  font-size: 1.5rem;
+}
+
+.todo ul li {
+  list-style: none;
+  margin-bottom: 4px;
+
+  border: 2px solid black;
+  border-radius: 10px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  padding-right: 5px;
+  margin-left: -100px;
+  background-color: rgb(236, 236, 236, 0.6);
+  font-family: "Permanent Marker", cursive;
+  color: black;
+}
+.todo ul li .delete,
+.todo ul li .completed {
+  height: 25px;
+  margin-top: 5px;
+  float: right;
+  padding: 0;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background: red;
+  color: white;
+  display: flex;
+  overflow: hidden;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.todo ul li .completed {
+  background: green;
+  margin-left: 10px;
+}
+
+.todo ul li .delete:hover,
+.todo ul li .completed:hover {
+  background-color: rgba(82, 80, 80, 0.5);
+}

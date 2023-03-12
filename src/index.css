@@ -1,13 +1,113 @@
-body {
+/* html {
+  background: url(./images/my-list-background.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+} */
+
+/* body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+} */
+
+* {
+  margin: 0;
+  padding: 0;
+  /* box-sizing: border-box; */
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  height: 100vh;
+  background: conic-gradient(
+    from 75deg at 22% 50%,
+    rgba(255, 0, 55, 0.55),
+    rgba(255, 71, 111, 0.46),
+    rgba(255, 143, 167, 0.37),
+    rgba(43, 10, 18, 0.5),
+    rgba(214, 39, 77, 0.52),
+    rgba(112, 0, 24, 0.63)
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Rubik Iso", cursive, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
+    "Droid Sans", "Helvetica Neue", sans-serif;
 }
+
+.screen {
+  height: 4rem;
+  margin-bottom: 4rem;
+}
+
+h1 {
+  color: #edb7c3;
+  text-align: center;
+  font-size: 2em;
+  background: conic-gradient(
+    from 255deg at 81% 50%,
+    #ff0037,
+    #ff4870,
+    #ff90a8,
+    rgba(43, 10, 18, 0.82),
+    rgba(213, 38, 76, 0.82),
+    rgba(111, 0, 24, 0.8)
+  );
+  width: 30%;
+  padding: 1rem;
+  border-radius: 1rem;
+  box-shadow: 0px 9px 15px -3px rgba(9, 146, 238, 0.1);
+}
+
+h1:hover {
+  color: #ff0037;
+  border: 1px solid #f478c0;
+}
+
+.wrapper {
+  background: url(./images/my-list-background.png) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width: 40rem;
+  padding: 1rem;
+  display: flex;
+  justify-content: flex-start;
+  border-radius: 1rem;
+  box-shadow: rgba(43, 187, 231, 0.51) 0px 8px 8px 0;
+}
+
+.buttonBox {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.5rem;
+}
+
+.button {
+  background: #e9f0f4;
+  height: 3.5rem;
+  padding: 10px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: #242424;
+  border: none;
+  font-size: 1.5rem;
+}
+
+.button:hover {
+  border: 2px dotted #f478c0;
+  color: #f478c0;
+}
+
+/* code {
+  font-family: "Rubik Iso", cursive;
+} */
