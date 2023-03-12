@@ -31,6 +31,7 @@ function TodoApp() {
 
   const completedTasks = () => {
     setShowCompleted((prev) => !prev);
+    console.log("ngdzdsfxgch");
   };
 
   const taskCompleted = (e, id) => {
@@ -118,14 +119,16 @@ function TodoApp() {
           icon="fa-regular fa-rectangle-list"
           className="completed_list"
           onClick={completedTasks}
+          disabled={tasklist.length === 0}
         />
       ) : (
         <Button
           type="submit"
-          text=" Show All"
+          text="All"
           icon="fa-regular fa-rectangle-list"
           className="completed_list"
           onClick={completedTasks}
+          disabled={tasklist.length === 0}
         />
       )}
     </div>
